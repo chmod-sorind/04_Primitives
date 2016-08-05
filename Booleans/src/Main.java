@@ -38,7 +38,7 @@ public class Main {
             System.out.println("They don't match !\n");
         }
 
-        //** Write code upt to here **//
+        //** Write code up to here **//
     }
 
 }
