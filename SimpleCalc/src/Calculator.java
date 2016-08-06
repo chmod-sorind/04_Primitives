@@ -1,10 +1,17 @@
 import java.io.*;
+import java.util.DoubleSummaryStatistics;
 
 public class Calculator {
 
 	public static void main(String[] args) {
-		String s1 = getInput("Enter a value: ");
-		System.out.println(s1);
+		String s1 = getInput("Enter a numeric value: ");
+		String s2 = getInput("Enter a numeric value: ");
+
+		double d1 = Double.parseDouble(s1);
+		double d2 = Double.parseDouble(s2);
+		double result = d1 + d2;
+
+		System.out.println("The result is: " + result);
 	}
 	
 	private static String getInput(String prompt) {
@@ -13,7 +20,7 @@ public class Calculator {
 
 		System.out.print(prompt);
 		System.out.flush();
-		
+
 		try {
 			return stdin.readLine();
 		} catch (Exception e) {
